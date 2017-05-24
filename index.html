@@ -30,16 +30,18 @@
 		</header>
 		
 		<section class="play-w-l"></section><!--secciòn donde se puede jugar lyft con autitos y coordenadas-->
+		<section id="tablero"></section><!--Creación del elemento tablero entregado por Blanca-->
 		<div class="play">
 			<h2>PLAY WITH LIFT!</h2></div>
 			<div class="coordenates"><!--ocupé iconos de autos sacados de font awesome-->
-				<i id="autito1" class="fa fa-car" aria-hidden="true"></i><input type="text" class"x" placeholder="X coordinate">
+				<i id="autito1" class="fa fa-car" aria-hidden="true"></i><input id="x" type="text" class"coord" placeholder="X coordinate">
 				<i id="autito2" class="fa fa-car" aria-hidden="true"></i>
-				<input type="text" class"y" placeholder="Y coordinate"><hr>
+				<input id="y" type="text" class"coord" placeholder="Y coordinate"><hr>
 				<button id="startBtn" type="button" class"startBtn" placeholder>START</button>
 			</div>
 		</section>
-		<section id="tablero"></section><!--Creación del elemento tablero entregado por Blanca-->
+		<div id="playGame" class="game-box"></div>
+			<!-- onclick: jueguito -->
 		<footer class="footer"><!--sección footer del documento, aqui hay links, datos personales, del proyecto, etc-->
 			<span class="sprint">
 				<h3>Sprint 3 - Project</h3>
@@ -59,7 +61,7 @@
 				</span>
 			</footer>
 			<footer class="footer2" id="project">
-				<p> ©2017 Lyft & Laboratoria, Inc</p>
+				<p> ©2017 Developed by Pau Lee, Laboratoria Chile</p>
 			</footer>
 			<script src="assets/js/main.js"></script>
 		</body>
