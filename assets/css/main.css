@@ -6,98 +6,333 @@ Colors:
 #75726C;
 #EDE9E2
 */
-body{
+body{/*por mientras pondremos la foto del header de fondo del body, ojalá no se desarme después de poner la ultima parte y el footer*/
+	/*background-image: url('../img/cropped-Lyft-Promo-Codes-car-1.jpg') ;*/
 	margin: 0;
 	padding: 0;
 	font-family: "Raleway";
+	/*background-size: cover;*/
 }
 
-
-header {  /*aqui le doy atributos al header*/
+nav {  /*aqui le doy atributos al header, que es la barra rosada de arriba*/
 	width: 100%;
 	background-color: #E54E79;
-	height: 50px;
+	height: 60px;
 	position: fixed;
 	top: 0;
-
+	z-index: 1;
 }
 
-
-header div img{/*aqui le doy atributos al logo que tuve que insertar en html prque no se funcionó acá con el link img/...*/
+.logo {/*aqui le doy atributos al logo */
+	background: url(../img/logo-white.png) no-repeat;
+	background-size: 100%;
+	margin-top: 8px;
+	display: inline-block;
 	position: relative;
-	top: 10px;
+	top: 1px;
 	left: 200px;
-	height: 30px;
-	width: 40px;
+	height: 35px;
+	width: 50px;
 }
 
 .links{/*aqui le doy atributos a la lista del menú (drive, explore, help, porque me quedaban fuera de la barra del header)*/
 	list-style: none;
 	position: absolute;
-	top: 0;
+	top: 8px;
 	right: 100px;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 }
 
-header nav ul li{
+
+.nav-bar ul li{
 	display: inline-block;
+
 }
-header nav ul li a{
+.nav-bar ul li a{/*drive, explore, help*/
 	display: inline-block;
 	color: white;
+	text-align: center;
 	font-weight: bold;
 	padding: 15px;
-	text-align: center;
-	/*left: 400px;*/
 	text-decoration: none;
 }	
-/*
-a:link {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
-	}*/
 
-#layer{
-	position: relative;
-    width: 100%;
-    height: 936px;
-    padding: 0px;
-    top: -4px;
-    left: 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
+.nav-bar li a:hover {/*color que hace el mouse al pasar sobre el menú*/
+	background-color: #E56385;
+}
+
+.form{/*header con foto principal*/
+	margin: 0px;
+	width: 100%;
+	height: 100vh;
 	background-image: url(../img/cropped-Lyft-Promo-Codes-car-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 
-h1{
+.mainBox{/*cajita ingreso fono*/
+	background-color: #EDE9E2;
+	width: 430px;
+	height: 420px;
 	position: relative;
-	top: 20px;
-	padding: 5px;
-}
-h2{
-	position: relative;
-	top: 3px;
-	padding: 5px;
+	left: 60%;
+	padding: 40px 30px;
+	box-sizing: border-box;
 }
 
-.form{
-	width: 500px;
-	height: 300px;
-	background: whitesmoke;
-	position: absolute;
-	top: 200px;
-	right: 0px;
+.mainBox h1{
+	color: #00B2A9;
+	padding-bottom: 13px;
+	font-size: 28px;
+	font-weight: bold;
 }
-.playwL{
-	margin-top: 800px;
+.mainBox label{
+	font-weight: lighter;
+	color: #75726C;
+	margin: 10px 200px 40px 0;
 }
+.mainBox p{
+			/*top: 70px; //QUEDA MUY MAAAL
+			left: 60px;*/
+			color: #75726C;
+			font-size: 14px;
+			font-weight: lighter;
+			margin: 88px -101px -59px 1px;
+
+		}
+		.mainBox .postulacion{
+			color: #75726C;
+			margin: 76px 45px 0px 0;
+			font-weight: lighter;
+		}
+		.mainBox .money{
+			color: #75726C;
+			margin: 87px 100px 0 0;
+			font-weight: lighter;
+		}
+		.input-form{
+			position: relative;
+			width: 400px;
+			height: 30px;
+			top: 10px;
+			left: 30px;
+			border: none;
+			border-left: none;
+			border-right: none;
+			border-color: #75726C;
+			background-color: #EDE9E2;
+			margin-bottom: 15px;
+			font-size: 14px;
+		}
+
+		button { 
+			color: whitesmoke;
+			width: 219px;
+			height: 49px;
+			position: relative;
+			bottom: 4px;
+			cursor: pointer;
+			background-color: #E54E79;
+			border-color: transparent;
+			border-radius: 22px;
+			font-size: 15px;
+			font-weight: lighter;
+			box-shadow: 0px 7px 22px 4px rgba(138,138,138,1);
+		}
+
+		.mainbox p{
+			color: #75726C;
+			font-weight: lighter;
+			padding-bottom: 20px;
+		}
+		.postulacion{
+			position: absolute;
+			top: 220px;
+			left: 30px;
+		}
+		.money{
+			position: absolute;
+			top: 250px;
+			left: 30px;
+		}
+		/* Seccion contenido, Play with Lyft*/
+		.play-w-l{
+			background-color: #1ad6cd;
+			padding:50px 0;
+		}	
+	/*.play-w-l div{
+		text-align: center;
+		background-color: black;*/
+	}
+	.play-w-l .play{
+		color: #75726C;
+		font-size: 30px;
+		font-weight: bolder;
+		padding: 20px 0;
+		position: relative;
+		bottom: 25px;
+		margin: 50px 0px;
+	}
+	.play-w-l .coordenates{
+		width: 70%;
+		height: 250px;
+		position: relative;
+	}
+
+	.play{
+		position: absolute;
+		width: 100%;
+		height: 8vh;
+		top: 712px;
+		background-color: #00B2A9;
+	}
+	.play h2{
+		color: #75726C solid;
+		position: absolute;
+		top: 15px;
+		left: 530px;
+		font-weight: bolder;
+		font-size: 26px;
+	}
+
+	.coordenates{
+		width: 650px;
+		height: 200px;
+		background: #EDE9E2;
+		position: absolute;
+		top: 803px;
+		right: 320px;
+	}
+	.x, .y{
+		position: relative;
+		top: 50px;
+		left: 60px;
+		margin: 50px;
+		width: 320px;
+		height: 40px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		font-size: 14px;
+		border-color: #75726C;
+		background-color: #EDE9E2;
+	}
+
+	#startBtn{
+		position: relative;
+		top: 60px;
+		background-color: #00B2A9;
+		color: whitesmoke;
+		width: 90%;
+		height: 55px;
+		font-size: 16px;
+		border-radius: 10px;
+		border: none;
+		-webkit-box-shadow: 0px 7px 22px 4px rgba(138,138,138,1);
+		-moz-box-shadow: 0px 7px 22px 4px rgba(138,138,138,1);
+		box-shadow: 0px 7px 22px 4px rgba(138,138,138,1);
+	}
+	#autito1, #autito2{
+		position: relative;
+		top: 40px;
+		color: #75726C;
+		font-size: 25px;
+	}	
+	
+	.startBtn{
+		width: 583px;
+		height: 50px;
+		position: absolute;
+		left: 30px;
+		bottom: 34px;
+		background-color: #00B2A9;
+		border-radius: 50px;
+		color: white;
+		font-size: 15px;
+		-webkit-box-shadow: 0px 7px 22px 4px rgba(138,138,138,1);
+		-moz-box-shadow: 0px 7px 22px 4px rgba(138,138,138,1);
+		box-shadow: 0px 7px 22px 4px rgba(138,138,138,1);
+	}
+	footer{
+		color: white;
+		font-weight: lighter;
+		background-color: #75726C;
+
+		/*width: 100%;
+		height: 20vh;
+		position: absolute;
+		top: 1079px;*/
+	}
+	.sprint{
+		position: relative;
+		top: 30px;
+		left: 0%;
+		/*color: yellow
+		font-size: 16px;*/
+	}
+	.sprint h3{
+		font-weight: lighter;
+		margin-bottom: 20px;
+	}
+	.icons{
+		display:inline-block;
+		margin: 3px;
+		cursor: pointer;
+	}
+	.networks{
+		position: relative;
+		top: -70px;
+		left: 70%;
+	}
+	.networks p{
+		top: 0px;
+		font-weight: lighter;
+		margin-bottom: 0px;
+	}
+	.socials ul{
+		list-style: none;
+	}
+	.socials ul li a{
+		text-decoration: none;
+		color: #EDE9E2;
+	}	
+	.lista-links li a:hover{
+		color: #66645f;
+	}
+	/*position: absolute;
+	top: 50px;
+	right: 120px;
+	list-style: none;*/
+}
+#project{
+	padding: 15px 0;
+	background-color: #66645f;
+}
+#project p{
+	position: relative;
+	background-color: #66645f;
+	left: 15%;
+}
+
+		/*#autito2{
+	display: inline-block;
+    position: absolute;
+    top: 61px;
+    left: 350px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 25px;
+    color: #75726C;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}width: 100%;
+		padding: 10px;
+		border: none;
+		border-bottom: solid 2px #c9c9c9;*/
+		
+
+
